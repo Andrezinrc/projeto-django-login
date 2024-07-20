@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'home/style.css' %}">
+<header class="cabecalho">
+    <div class="container-nav">
+        <div class="titulo">
+            <h2>Aprendendo</h2>
+        </div>
+        <nav class="nav-bar">
+             <a href="{% url 'login' %}">login</a>
+             <a href="{% url 'register' %}">sign in</a>
+         </nav>
+    </div>
+</header>
+{% endblock %}
