@@ -7,6 +7,21 @@
     <title>Curso de Django</title>
 </head>
 <body>
+<header class="cabecalho">
+    <div class="container-nav-login-inicio">
+        <div class="titulo">
+        <h2>Andrecode</h2>
+        </div>
+        <nav class="nav-bar-inicio">
+            <a href="{% url 'login' %}">login</a>
+            <a href="{% url 'register' %}">sign in</a>
+        </nav>
+    </div>
+</header>
+<div class="logo-bg"></div>
+<div class="logo">
+    <h1><span>&lt;Dev360/&gt;</span></h1>
+</div>
     {% block content %} {% endblock %}
 </body>
 </html>
