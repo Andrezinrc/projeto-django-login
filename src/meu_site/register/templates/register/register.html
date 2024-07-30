@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'register/style.css' %}">
+<main>
+    <form action="" method="post" class="login-container">
+        <h1>CADASTRO</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="botao-login-container" type="submit">Registrar</button><br><br>
+        <a href="{% url 'login' %}">Já tem uma conta? Faça login</a>
+    </form>
+</main>
+{% endblock %}

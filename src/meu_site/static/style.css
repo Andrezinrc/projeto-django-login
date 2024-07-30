@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+.cabecalho{
+    width: 100%;
+    height: 50px;
+    background-color: #1F1B24;
+    padding: 10px 20px;
+}
+.titulo h1{
+    color: white;
+    font-size: 20px;
+}
+.container-nav-login-inicio{
+    display: flex;
+    justify-content: space-between;
+    align-itens: center;
+}
+.nav-bar-inicio{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-bar-inicio a{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar a:hover{
+    border-bottom: 1px solid white;
+}
+.boas-vindas-inicio {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.boas-vindas-inicio h1 {
+    display: block;
+    font-size: 137px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+     color: transparent;
+}
+
+.logo::before {
+    top: 10%;
+    left: 10%;
+}
+
+.logo::after {
+    bottom: 10%;
+    right: 10%;
+}
+
+.logo-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -2;
+}
+
+.login-container {
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+     color: transparent;
+}
+
+.login-container label{
+    color: black;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.botao-login-container {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.login-container a{
+    color: #000000;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .login-container{
+        width: 80%;
+    }
+    .boas-vindas-inicio h1 {
+        display: none;
+    }    
+}

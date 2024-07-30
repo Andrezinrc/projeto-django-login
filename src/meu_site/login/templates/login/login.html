@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'login/style.css' %}">
+<main class="conteudo">
+    <form method="post" class="login-container">
+        <h1>Login</h1>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="botao-login-container" type="submit">Entrar</button><br><br>
+        {% for message in messages %}
+            <p class="{{ message.tags }}">{{ message }}</p>
+        {% endfor %}
+        <a href="{% url 'register' %}">Não tem conta? Faça o registro agora.</a>
+    </form>
+</main>
+{% endblock %}
